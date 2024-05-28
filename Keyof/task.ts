@@ -43,7 +43,7 @@ interface IPhonesManufacturedAfterDate extends IMobilePhone {
   ): IPhonesManufacturedAfterDate[] {
     return phones.filter(phone => {
       const manufactured = phone[key]
-      if(manufactured instanceof Date && manufactured.getTime() > new Date(phone.manufactured).getTime()){
+      if(manufactured instanceof Date && manufactured.getTime() > new Date(initial).getTime()){
 
       } { return phone}
     }).map(phone => {
